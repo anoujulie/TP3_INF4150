@@ -37,14 +37,12 @@
       <li class="nav-item">
         <a class="nav-link" href="manuel.html">manuel</a>
       </li> 
-	  <li class="nav-item">
-        <a class="nav-link" href="dossiers_comptable.html">dossiers_comptable</a>
-      </li>	  
+	   
     </ul>
   </div>  
-</nav>
+  </nav>
 
-<div class="container" style="margin-top:30px">
+  <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4">
       <h2>Accueil</h2>
@@ -54,145 +52,47 @@
 	  <img src="compta.png" class="fakeimg" alt="compta" style="width:100%;">
 	  </div>
 	  
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h2>Liens</h2>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Factures.html">Link2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+           
       <hr class="d-sm-none">
     </div>
-    <div class="col-sm-8">
-      <h2>Dossiers_comptable - John :</h2>  
-      <h3>compte de produits a recevoir :</h3>  
-	  
+    
+	
+	 <div class="col-sm-8">
+      <h2>Dossiers comptable John :</h2>  
+            
       <div class="container">
               
     <table class="table table-striped">
     <thead>
       <tr>
-        <th>N Facture</th>
-        <th>Code Membre</th>
-        <th>Date Facture</th>
-		<th>Code Article</th>
+        <th>N Dossier Comptable</th>
         <th>Description</th>
-		<th>Quantite</th>
-        <th>Prix unitaire</th>
-		<th>Sous total (avec taxes)</th>
-        <th>Remarques</th>
-        <th>Telephone</th>
+        <th>Details_D_Comptable</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th>F101</th>
-        <th>M51</th>
-        <th>12/10/2017</th>
-		<th>A2050</th>
-        <th>Pantalon</th>
-		<th>3</th>
-        <th>100.00$</th>
-		<th>344.93$</th>
-        <th>Paiement especes</th>
-        <th>514 111 1212</th>
+		<tr> 
+	    <td>001</td>
+        <td>Achat de vetements de sport</td>
+        <td> <a href="dossiers_comptable - John - 01.html">Details</a> </td>
       </tr>
-      <tr>
-        <th>F101</th>
-        <th>M51</th>
-        <th>12/10/2017</th>
-		<th>A2055</th>
-        <th>Chaussure</th>
-		<th>2</th>
-        <th>90.00$</th>
-		<th>206.96$</th>
-        <th>Paiement especes</th>
-        <th>514 111 1212</th>
+	  <tr> 
+	    <td>002</td>
+        <td>Achat de l'equipements pour voyages</td>
+        <td> <a href="dossiers_comptable - John - 02.html">Details</a> </td>
       </tr>
-	</tbody>
-  </table>
-  
-      <h3>compte de charges a payer :</h3>  
 	  
-      <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>N Facture</th>
-        <th>Code Membre</th>
-        <th>Date Facture</th>
-		<th>Code Article</th>
-        <th>Description</th>
-		<th>Quantite</th>
-        <th>Prix unitaire</th>
-		<th>Sous total (avec taxes)</th>
-        <th>Remarques</th>
-        <th>Telephone</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>F101</th>
-        <th>M51</th>
-        <th>12/10/2017</th>
-		<th>A2050</th>
-        <th>Pantalon</th>
-		<th>3</th>
-        <th>100.00$</th>
-		<th>344.93$</th>
-        <th>Paiement especes</th>
-        <th>514 111 1212</th>
-      </tr>
-      <tr>
-        <th>F101</th>
-        <th>M51</th>
-        <th>12/10/2017</th>
-		<th>A2055</th>
-        <th>Chaussure</th>
-		<th>2</th>
-        <th>90.00$</th>
-		<th>206.96$</th>
-        <th>Paiement especes</th>
-        <th>514 111 1212</th>
-      </tr>
-	</tbody>
+    </tbody>
   </table>
-
-
-</div>
-
-    </div>
+ 
   </div>
+  </div>
+	
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
 
 <script>
-function AddRecord() {
-  var adoConn = new ActiveXObject("ADODB.Connection");
-  var adoRS = new ActiveXObject("ADODB.Recordset");
 
-  adoConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source='/\dbName.mdb'");
-  adoRS.Open("Select * From tblName", adoConn, 1, 3);
-
-  adoRS.AddNew;
-  adoRS.Fields("FieldName").value = "Quentin";
-  adoRS.Update;
-
-  adoRS.Close();
-  adoConn.Close();
-}
 </script>
 
 </body>

@@ -37,9 +37,7 @@
       <li class="nav-item">
         <a class="nav-link" href="manuel.html">manuel</a>
       </li> 
-	  <li class="nav-item">
-        <a class="nav-link" href="dossiers_comptable.html">dossiers_comptable</a>
-      </li>	  
+	  
     </ul>
   </div>  
 </nav>
@@ -54,73 +52,21 @@
 	  <img src="compta.png" class="fakeimg" alt="compta" style="width:100%;">
 	  </div>
 	  
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h2>Liens</h2>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Factures.html">Link2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+           
       <hr class="d-sm-none">
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-4">
       <h2>Manuel :</h2>  
+      <h5><a href="manuel.pdf">telecharger le manuel</a></h5> <br/> <br/>
       
       
-      
-      <p>- Gestion des membres <br/>
-	- Gestion des factures et sous-factures <br/> 
-	- Consultation des etats des comptes <br/>
-	- Mise a jour des comptes membres <br/> 
-	- Gestion des dossiers comptables <br/>
-	Et beaucoup plus!
-</p>
-      <br><br><br><br>
-	  
-      <h2>Nos membres</h2>
-      
-      
-      
-      <p>- Entreprises <br/>
-	- Organismes etatiques <br/> 
-	- Personnes physiques <br/>
-	- Etudiants <br/> 
-	Et autres!
-	</p>
-
+     
     </div>
-  </div>
 </div>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
 
 <script>
-function AddRecord() {
-  var adoConn = new ActiveXObject("ADODB.Connection");
-  var adoRS = new ActiveXObject("ADODB.Recordset");
 
-  adoConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source='/\dbName.mdb'");
-  adoRS.Open("Select * From tblName", adoConn, 1, 3);
-
-  adoRS.AddNew;
-  adoRS.Fields("FieldName").value = "Quentin";
-  adoRS.Update;
-
-  adoRS.Close();
-  adoConn.Close();
-}
 </script>
 
 </body>
