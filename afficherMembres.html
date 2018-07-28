@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Gestion comptable</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="fichierCSS.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+      height: 200px;
+      background: #aaa;
+  }
+  </style>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Gestion comptable</h1>
+  <p>Gestion des dossiers comptables</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Accueil</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="afficherMembres.html">membres</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Factures.html">Factures</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="manuel.html">manuel</a>
+      </li> 
+	    
+    </ul>
+  </div>  
+  </nav>
+
+  <div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+        <h3>Action sur les membres</h3>
+		<ul class="nav nav-pills flex-column">
+			<li class="nav-item">
+				<a class="nav-link" href="ajouterMembres.html">Ajouter</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="afficherMembres.html">Afficher</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Éditer</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link">Supprimer</a>
+			</li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    
+	
+	 <div class="col-sm-8">
+      <h2>Afficher les membres:</h2>  
+            
+      <div class="container">
+              
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nom de famille</th>
+        <th>Prenom</th>
+        <th>Courriel</th>
+		<th>dossiers_comptable</th>
+      </tr>
+    </thead>
+    <tbody>
+		<tr> 
+	    <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+		<td> <a href="dossiers_comptable - John.html">Dossiers</a> </td>
+      </tr>
+	  <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+		<td> <a href="dossiers_comptable - Mary.html">Dossiers</a> </td>
+      </tr>
+	  <tr>
+        <td>Farid</td>
+        <td>Samir</td>
+        <td>farid@example.com</td>
+		<td> <a href="dossiers_comptable - Farid.html">Dossiers</a> </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+		<td> <a href="dossiers_comptable - July.html">Dossiers</a> </td>
+      </tr>
+	  
+    </tbody>
+  </table>
+ 
+  </div>
+  </div>
+	
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+
+</html>
