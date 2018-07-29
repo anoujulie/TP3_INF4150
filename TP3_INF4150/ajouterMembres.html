@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Clients</title>
+  <title>Gestion comptable</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="fichierCSS.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="javaScript/jquery/jquery-3.3.js"></script>
+  <script src="javaScript/codeJS.js"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <style>
-  .fakeimg {
-      height: 200px;
-      background: #aaa;
-  }
-  </style>
 </head>
 <body>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Clients</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>Gestion comptable</h1>
+  <p>Gestion des dossiers comptables</p>  
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Accueil</a>
+  <a class="navbar-brand" href="index.html">Accueil</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="Clients.html">Membres</a>
+        <a class="nav-link" href="afficherMembres.html">Membres</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Factures.html">Factures</a>
+        <a class="nav-link" href="factures.html">Factures</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="manuel.html">Manuel</a>
@@ -49,10 +45,10 @@
         <h3>Action sur les membres</h3>
 		<ul class="nav nav-pills flex-column">
 			<li class="nav-item">
-				<a class="nav-link active" href="Clients.html">Ajouter</a>
+				<a class="nav-link" href="ajouterMembres.html">Ajouter</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="membres2.html">Afficher</a>
+				<a class="nav-link active" href="afficherMembres.html">Afficher</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link">Éditer</a>
@@ -66,7 +62,7 @@
     <div class="col-sm-8">
 		<h2>Ajouter un membre:</h2>
 		<br/>
-		<form>
+		<form id="fAjtMembre" onsubmit="fctAjouterMembre()" >
 			<div class="form-group">
 				<label for="nom">Nom : </label>
 				<input class="lenom" id="nom" type="text">
@@ -94,7 +90,7 @@
 				<option>5</option>
 				</select>
 			</div>
-			<button>Ajouter</button>
+			<input value="Ajouter" type="submit" />
 		</form>
         
     </div>
